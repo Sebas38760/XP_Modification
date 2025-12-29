@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wesnoth-XP_Modification\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2025-12-29 13:46\n"
-"PO-Revision-Date: 2025-12-29 13:59-0300\n"
+"POT-Creation-Date: 2025-12-29 19:54\n"
+"PO-Revision-Date: 2025-12-29 19:59-0300\n"
 "Last-Translator: Sebastián Lecchini <sebas38760@gmail.com>\n"
 "Language-Team: es\n"
 "Language: es\n"
@@ -12,42 +12,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. [set_menu_item], id=xp_mod_a
-#: XP_Modification/macros/xp.cfg:42
+#: XP_Modification/macros/xp.cfg:50
 msgid "+$Rav_XP_hp_amount hp: $Rav_XP_hp_cost xp"
 msgstr "+$Rav_XP_hp_amount PV: $Rav_XP_hp_cost PX"
 
 #. [set_menu_item], id=xp_mod_b
-#: XP_Modification/macros/xp.cfg:47
+#: XP_Modification/macros/xp.cfg:55
 msgid "+$Rav_XP_hp_amount hp: $Rav_XP_hp_cost_drainer xp"
 msgstr "+$Rav_XP_hp_amount PV: $Rav_XP_hp_cost_drainer PX"
 
 #. [set_menu_item], id=xp_mod_c
-#: XP_Modification/macros/xp.cfg:52
+#: XP_Modification/macros/xp.cfg:60
 msgid "+$Rav_XP_move_amount movement: $Rav_XP_move_cost xp"
 msgstr "+$Rav_XP_move_amount movimiento: $Rav_XP_move_cost PX"
 
 #. [set_menu_item], id=xp_mod_d
-#: XP_Modification/macros/xp.cfg:57
+#: XP_Modification/macros/xp.cfg:65
 msgid "+$Rav_XP_move_amount movement: $Rav_XP_move_cost_drainer xp"
 msgstr "+$Rav_XP_move_amount movimiento: $Rav_XP_move_cost_drainer PX"
 
 #. [set_menu_item], id=xp_mod_e
-#: XP_Modification/macros/xp.cfg:62
+#: XP_Modification/macros/xp.cfg:70
 msgid "+$Rav_XP_damage_amount damage: $Rav_XP_damage_cost xp"
 msgstr "+$Rav_XP_damage_amount daño: $Rav_XP_damage_cost PX"
 
 #. [set_menu_item], id=xp_mod_f
-#: XP_Modification/macros/xp.cfg:67
+#: XP_Modification/macros/xp.cfg:75
 msgid "+$Rav_XP_damage_amount damage: $Rav_XP_damage_cost_drainer xp"
 msgstr "+$Rav_XP_damage_amount daño: $Rav_XP_damage_cost_drainer PX"
 
 #. [set_menu_item], id=xp_mod_g
-#: XP_Modification/macros/xp.cfg:72
+#: XP_Modification/macros/xp.cfg:80
 msgid "+$Rav_XP_strike_amount strike: $Rav_XP_strike_cost xp"
 msgstr "+$Rav_XP_strike_amount ataque: $Rav_XP_strike_cost PX"
 
 #. [set_menu_item], id=xp_mod_h
-#: XP_Modification/macros/xp.cfg:77
+#: XP_Modification/macros/xp.cfg:85
 msgid "+$Rav_XP_strike_amount strike: $Rav_XP_strike_cost_drainer xp"
 msgstr "+$Rav_XP_strike_amount ataque: $Rav_XP_strike_cost_drainer PX"
 
@@ -61,15 +61,20 @@ msgstr "XP Mod"
 msgid ""
 "Spend XP to upgrade units damage/strikes/health/movement.\n"
 "\n"
-"version 2.4.3 by Ravana - based on work by vn971, Dovolente, itota and "
-"Nosmos\n"
-"\n"
-"Units with drain ability have higher upgrade cost"
+"version "
 msgstr ""
 "Gasta PX para mejorar el daño/ataques/salud/movimiento de las unidades.\n"
 "\n"
-"versión 2.4.3 por Ravana - basado en el trabajo de vn971, Dovolente, itota y "
-"Nosmos\n"
+"versión "
+
+#. [modification], id=Rav_XP_Mod
+#: XP_Modification/mods/xp_mod.cfg:8
+msgid ""
+" by Ravana - based on work by vn971, Dovolente, itota and Nosmos\n"
+"\n"
+"Units with drain ability have higher upgrade cost"
+msgstr ""
+" por Ravana - basado en el trabajo de vn971, Dovolente, itota y Nosmos\n"
 "\n"
 "Las unidades con la habilidad de drenaje tienen un coste de mejora más alto"
 
@@ -175,72 +180,54 @@ msgid "XP cost penalty for drainers, in percent"
 msgstr "Penalización de coste de PX para drenadores, en porcentaje"
 
 #. [lua]
-#: XP_Modification/mods/xp_mod.cfg:112
+#: XP_Modification/mods/xp_mod.cfg:113
 msgid "%s the %s"
 msgstr "%s el %s"
 
 #. [lua]
-#: XP_Modification/mods/xp_mod.cfg:113
+#: XP_Modification/mods/xp_mod.cfg:114
 msgid "I spent %s xp for %s!"
 msgstr "¡Gasté %s PX por %s!"
 
 #. [chat]
-#: XP_Modification/mods/xp_mod.cfg:136
+#: XP_Modification/mods/xp_mod.cfg:138
 msgid "XP Modification"
 msgstr "XP Mod"
 
-#. [chat]
-#: XP_Modification/mods/xp_mod.cfg:137
-msgid ""
-"WARNING\n"
-"\n"
-"Settings not found. Expected cause is bug #23512. Fix is enabling Advanced "
-"Settings->Level options in campaign menu.\n"
-"\n"
-"Default settings assumed."
-msgstr ""
-"ADVERTENCIA\n"
-"\n"
-"No se encontraron las configuraciones. La causa probable es el error #23512. "
-"La solución es activar Opciones avanzadas->Opciones de nivel en el menú de "
-"campaña.\n"
-"\n"
-"Se asumen las configuraciones predeterminadas."
-
 #. [lua]
-#: XP_Modification/mods/xp_mod.cfg:215
+#: XP_Modification/mods/xp_mod.cfg:217
 msgid "Hitpoints cost: "
 msgstr "Costo de PV: "
 
 #. [lua]
-#: XP_Modification/mods/xp_mod.cfg:216
+#: XP_Modification/mods/xp_mod.cfg:218
 msgid "Movement cost: "
 msgstr "Costo de movimiento: "
 
 #. [lua]
-#: XP_Modification/mods/xp_mod.cfg:217
+#: XP_Modification/mods/xp_mod.cfg:219
 msgid "Damage cost: "
 msgstr "Costo del daño: "
 
 #. [lua]
-#: XP_Modification/mods/xp_mod.cfg:218
+#: XP_Modification/mods/xp_mod.cfg:220
 msgid "Strikes cost: "
 msgstr "Costo de ataques: "
 
 #. [lua]
-#: XP_Modification/mods/xp_mod.cfg:222
+#: XP_Modification/mods/xp_mod.cfg:224
 msgid "AMLA only: yes"
 msgstr "Solo tras máximo nivel: sí"
 
 #. [lua]
-#: XP_Modification/mods/xp_mod.cfg:225
+#: XP_Modification/mods/xp_mod.cfg:227
 msgid "AMLA only: no"
 msgstr "Solo tras máximo nivel: no"
 
 #. [lua]
-#: XP_Modification/mods/xp_mod.cfg:227
-msgid "XP Mod version 2.4.3"
-msgstr "XP Mod version 2.4.3"
+#: XP_Modification/mods/xp_mod.cfg:230 XP_Modification/mods/xp_mod_beta.cfg:241
+msgid "XP Mod version "
+msgstr "XP Mod versión "
 
 #. [modification], id=Rav_XP_Mod_Beta
 #: XP_Modification/mods/xp_mod_beta.cfg:5
@@ -265,7 +252,7 @@ msgid ""
 "\n"
 "Attacks that are not from unit type might get upgraded, but not tested.\n"
 "\n"
-"version 2.4.3 by Ravana"
+"version "
 msgstr ""
 "Experimento donde las mejoras de daño y ataques se distribuyen "
 "automáticamente y la cantidad de mejora es el 10% del valor base en lugar de "
@@ -285,7 +272,12 @@ msgstr ""
 "Los ataques que no provienen del tipo de unidad podrían mejorarse, pero no "
 "se ha probado.\n"
 "\n"
-"versión 2.4.3 por Ravana"
+"versión "
+
+#. [modification], id=Rav_XP_Mod_Beta
+#: XP_Modification/mods/xp_mod_beta.cfg:14
+msgid " by Ravana"
+msgstr " por Ravana"
 
 #. [slider], id=Rav_XP_damage_cost_beta
 #: XP_Modification/mods/xp_mod_beta.cfg:25
@@ -293,16 +285,14 @@ msgid "XP required to upgrade total power"
 msgstr "PX requeridos para mejorar el poder total"
 
 #. [set_menu_item], id=xp_mod_exp_power
-#: XP_Modification/mods/xp_mod_beta.cfg:218
+#: XP_Modification/mods/xp_mod_beta.cfg:219
 msgid "+$Rav_XP_damage_percent|% base damage: $Rav_XP_damage_cost_beta xp"
 msgstr "+$Rav_XP_damage_percent|% daño base: $Rav_XP_damage_cost_beta PX"
 
 #. [lua]
-#: XP_Modification/mods/xp_mod_beta.cfg:237
+#: XP_Modification/mods/xp_mod_beta.cfg:238
 msgid "Power cost: "
 msgstr "Costo de energía: "
 
-#. [lua]
-#: XP_Modification/mods/xp_mod_beta.cfg:239
-msgid "XP Mod version 2.4.3 (beta)"
-msgstr "XP Mod version 2.4.3 (beta)"
+#~ msgid "XP Mod version 2.4.3 (beta)"
+#~ msgstr "XP Mod version 2.4.3 (beta)"
